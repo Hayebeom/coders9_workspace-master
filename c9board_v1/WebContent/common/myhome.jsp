@@ -27,7 +27,7 @@
 	}
 
 	.mar {
-		margin : 8%;
+		margin : 7%;
 	}
 	
 	.card {
@@ -55,32 +55,32 @@
 	</div>
 	
 	<div class="bodyer ">
-	<div class=row>
-		<div class="mar">&emsp;</div>
-	</div>
 		<div class="row justify-content-center">
+			<div class="mar text-white display-3">WelCome!</div>
+		</div>
+		<div class="row justify-content-center">
+		
 			<form method="POST" action="" class="">
 				<div class="">
 					<div class="card ">
 						<div class="card-body">
 			
-						    <div class="form-group ">
-						      <label for="exampleDropdownFormEmail1">Email address</label>
-						      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+						    <div class="form-group">
+						      <label for="signin-id">User ID</label>
+						      <input type="text" class="form-control" id="signin-id" placeholder="plz input here ID :)">
 						    </div>
 						    
 						    <div class="form-group">
-						      <label for="exampleDropdownFormPassword1">Password</label>
-						      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+						      <label for="signin-password">Password</label>
+						      <input type="password" class="form-control" id="signin-password" placeholder="I didn't see anything XD">
 						    </div>
 						    
 						    <div class="form-check">
-						      <!-- 
 						      <input type="checkbox" class="form-check-input" id="dropdownCheck">
 						      <label class="form-check-label" for="dropdownCheck">
 						        Remember me
 						      </label>
-						       -->
+						       
 						      <button type="submit" class="btn btn-sm btn-success float-right" >Sign in</button>
 						    </div>
 						    
@@ -88,19 +88,66 @@
 						    	<div class="col-12"></div>
 						    </div>
 						    
-							<div class="row mt-5">
+							<div class="row mt-4">
 								<div class="mr-1 float-left">
-									<button type="button" class="btn btn-primary btn-sm float-left" id="new-user">New around here?</button>
+									<button type="button" class="btn btn-primary btn-sm float-left" data-toggle="modal" data-target="#modal-signup-form" >New around here?</button>
 								</div>
 								<div class=" float-right">
-									<button type="button" class="btn btn-danger btn-sm  float-right ">Forgot password?</button>
+									<button type="button" class="btn btn-danger btn-sm float-right" >Forgot password?</button>
 								</div>
+								
 							</div>
 							
 						</div>
 					</div>
 				</div>
 			</form>
+			
+				<div class="modal fade" id="modal-signup-form" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered" role="document">
+				    <div class="modal-content">
+				    
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="modal-title">Nice to meet you!</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      
+				      <form method="POST" action="">
+					      <div class="modal-body">
+					        <div class="form-group">
+							      <label for="signup-id">Insert New id</label>
+							      <input type="text" class="form-control" id="signup-id" placeholder="ex ) hyb1201">
+							</div>
+					        <div class="form-group">
+							      <label for="signup-name">Insert New name</label>
+							      <input type="text" class="form-control" id="signup-name" placeholder="ex ) 하예범">
+							</div>
+					        <div class="form-group">
+							      <label for="signup-nickname">Insert New nickname</label>
+							      <input type="text" class="form-control" id="signup-nickname" placeholder="ex ) astar">
+							</div>
+					        <div class="form-group">
+							      <label for="signup-password">Insert New password</label>
+							      <input type="password" class="form-control" id="signup-password" placeholder="ex ) ********">
+							</div>
+					        <div class="form-group">
+							      <label for="signup-email">Insert New Email address</label>
+							      <input type="email" class="form-control" id="signup-email" placeholder="ex ) hyb1201@gmail.com">
+							</div>
+					      </div>
+					      
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					        <button type="button" class="btn btn-success" onclick="">Sign up</button>
+					      </div>
+				      </form>
+				      
+				    </div>
+				  </div>
+				</div>
+
 		</div>
 	</div>
 	
