@@ -34,6 +34,15 @@
 	    background-color: rgba(255,255,255, 0.7) !important;
 	}
 	
+	.modal-backdrop {
+	    background-color: rgba(0,0,0, 0.0001) !important;
+	}
+	
+	.modal-size {
+		width: 20%;
+		height: 20%;
+	}
+	
 	.test {	
 		margin: auto;
 	    position: absolute;	
@@ -104,11 +113,11 @@
 			</form>
 			
 				<div class="modal fade" id="modal-signup-form" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
-				  <div class="modal-dialog modal-dialog-centered" role="document">
+				  <div class="modal-dialog modal-dialog-centered modal-size" role="document">
 				    <div class="modal-content">
 				    
 				      <div class="modal-header">
-				        <h5 class="modal-title" id="modal-title">Nice to meet you!</h5>
+				        <h5 class="modal-title w-100 text-center" id="modal-title">Here's Menu ＼^^／</h5>
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				          <span aria-hidden="true">&times;</span>
 				        </button>
