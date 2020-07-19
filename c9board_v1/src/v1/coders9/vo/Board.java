@@ -3,7 +3,7 @@ package v1.coders9.vo;
 import java.util.Date;
 
 /**
- * 2. DB에 설정한 board에 맞춰서 vo 작성
+ * !!!1.2 DB에 설정한 board에 맞춰서 vo 작성
  * 	외래키인 userNo를 사용할 것이기 때문에 userNo도 선언
  * @author HYB
  *

@@ -4,7 +4,7 @@ import java.util.Date;
 
 
 /**
- * 1. DB에 설정한 user에 맞춰서 vo 작성
+ * !!!1.2 DB에 설정한 user에 맞춰서 vo 작성
  * @author HYB
  *
  */

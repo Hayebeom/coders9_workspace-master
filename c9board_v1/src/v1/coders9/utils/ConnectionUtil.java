@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 /**
- * 3. java와 DB의 연동을 위한 Util 작성
+ * !!!2. java와 DB의 연동을 위한 Util 작성
  * @author HYB
  *
  */
@@ -32,12 +32,15 @@ public class ConnectionUtil {
 	 */
 	public static Connection getConnection() throws SQLException {
 
-		String url = "jdbc:mariadb://localhost:3306/board?useUnicode=true&characterEncoding=utf8";
-		String user = "hyb";
+//		String url = "jdbc:mariadb://localhost:3306/board?useUnicode=true&characterEncoding=utf8";
+//		String url = "jdbc:mariadb://localhost:3306/board1";	// 학원꺼는 이거였나
+		String url = "jdbc:mariadb://localhost:3306/board";
+		String user = "root";	// 별명말고 사용자 이름, hyb라고 썼다가 java.sql.SQLInvalidAuthorizationSpecException 오류남
 		String pwd = "zxcv1234";
 		
-		return DriverManager.getConnection(url, user, pwd);
-
+		Connection connection = DriverManager.getConnection(url, user, pwd);
+		return connection;
+		
 //		String url = "jdbc:oracle:thin:@localhost:1521:xe";
 //		String user = "hr";
 //		String password = "zxcv1234";
